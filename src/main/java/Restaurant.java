@@ -65,4 +65,10 @@ public class Restaurant {
         return name;
     }
 
+
+    public double getOrderPrice(ArrayList<String> selectedItems) {
+        Double totalPrice = 0.0;
+
+        return totalPrice;
+    }
 }
