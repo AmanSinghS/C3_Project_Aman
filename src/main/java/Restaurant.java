@@ -68,7 +68,11 @@ public class Restaurant {
 
     public double getOrderPrice(ArrayList<String> selectedItems) {
         Double totalPrice = 0.0;
+        for(String itemSelected: selectedItems)
+        {
+            totalPrice = totalPrice + findItemByName(itemSelected).getPrice();
 
+        }
         return totalPrice;
     }
 }
